@@ -9,10 +9,10 @@ app.use(cors());
 app.use(bodyparser.json()); // Body parser use JSON data
 /* Connect to Database */
 var connection = mysql.createConnection({
-  host:'cgdev2.cf53zztlzwqg.us-east-1.rds.amazonaws.com',
-  user:'cgdevuser',
-  password:'cgdev123',
-  database:'internDb',
+  host:'X',
+  user:'X',
+  password:'X',
+  database:'X',
 })
 
 
