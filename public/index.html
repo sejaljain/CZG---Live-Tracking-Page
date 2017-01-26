@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html ng-app ="myApp">
+    <head>
+        <system.webServer>
+<httpProtocol>
+  <customHeaders>
+    <add name="Access-Control-Allow-Origin" value="*" />
+    <add name="Access-Control-Allow-Methods" value="GET, POST" />
+  </customHeaders>
+</httpProtocol>    
+        <title>Citizengage Tracking</title>
+        <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="lib/css/bootstrap.min.css" />
+        <link href="lib/css/simple-sidebar.css" rel="stylesheet">
+        <link rel="stylesheet" href="lib/css/animate.min.css" />
+
+        <script type='text/javascript' src="lib/moment.min.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="lib/lodash.min.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="lib/angular.min.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="lib/angular-sanitize/angular-sanitize.min.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="lib/angular-leaflet-directive_dev_mapped.js" charset="UTF-8"></script>
+        <script type='text/javascript' src="lib/angular-ui-router.min.js" charset="UTF-8"></script>
+        
+        <script type='text/javascript' src="app/app.controller.js" charset="UTF-8"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.20.1/mapbox-gl.css' rel='stylesheet'/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <script src="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.js"></script>
+        <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.1/leaflet.css">
+        <script src="lib/angular-leaflet-directive.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+
+
+        <style>
+            body { margin:0; padding:0; }
+            #map { position:relative; top:0; bottom:0; width:100%; }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <div id="sidebar-wrapper">
+                <ul class="sidebar-nav">
+                    <li class="sidebar-brand">
+                        <a href="#">Live Tracking</a>
+                        <a href="#history">History Playback</a>
+                        <a href ="#geofence">GeoFence</a>
+                        <a href ="#poi">Points of Interest</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div ng-view></div>
+        <script type='text/javascript' src="app.js" charset="UTF-8"></script>
+
+    </body>
+</html>
+ 

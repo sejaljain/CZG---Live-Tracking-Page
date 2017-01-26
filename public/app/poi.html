@@ -1,0 +1,23 @@
+<div id="temp">
+    <h1>Points of Interest</h1>
+        <button type="submit" class="btn btn-default" ng-click="addMarker()">Add a Marker</button>
+         <leaflet lf-center="bangalore" event-broadcast="events"  markers="markers" geojson="geojson" defaults="defaults" height="400px" width="100%" ></leaflet>
+    
+        <p>Marker Address: <strong ng-bind="address.address"></strong></p>
+        <form>
+    <div class="form-inline">
+        <label for="name">Name</label>
+        <input type="input" class="form-control" id="n" ng-model="f.n">
+        <label for="type">Type</label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.t" value="DWCC"> DWCC
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.t" value="BioGas Plant"> BioGas Plant
+      </div>
+
+    </form>
+    <button type="submit" class="btn btn-default" ng-click="submit(f)">Save</button>
+
+   
+</div>

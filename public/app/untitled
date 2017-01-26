@@ -1,0 +1,4 @@
+<div id="temp">
+    <h1>Geo-Fence</h1>
+    <leaflet lf-center="bangalore" defaults="defaults" height="600px" width="100%" ></leaflet>
+</div>

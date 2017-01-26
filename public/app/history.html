@@ -1,0 +1,28 @@
+<div id="temp">
+    <h1>History Playback</h1>
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="driver">Driver Name</label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.driver" value="355217044868611"> Driver 1
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.driver" value="354678456723764"> Driver 2
+        </label>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="begin">Begin</label>
+        <input type="datetime-local" class="form-control" id="begin" ng-model="f.begin">
+      </div>
+    <div class="form-group">
+        <label for="end">End</label>
+        <input type="datetime-local" class="form-control" id="end" ng-model="f.end">
+      </div>
+      <button type="submit" class="btn btn-default" ng-click="submit(f)">Show Route</button>
+      <button type="submit" class="btn btn-default" ng-click="animate(f)">Animate</button>
+    </form>
+    <br>
+    <leaflet lf-center="bangalore" geojson="geojson" markers = "markers" defaults="defaults" height="600px" width="100%" ></leaflet>
+
+</div>

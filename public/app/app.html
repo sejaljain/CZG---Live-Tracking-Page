@@ -1,0 +1,16 @@
+<div id="temp">
+    <h1>Live Tracking</h1>
+    <form class="form-inline">
+        <label for="driver">Driver Name</label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.driver" value="355217044868611"> Driver 1
+        </label>
+        <label class="radio-inline">
+          <input type="radio" name="inlineRadioOptions" id="inlineRadio1" ng-model="f.driver" value="354678456723764"> Driver 2
+        </label>
+</form>
+<button type="submit" class="btn btn-default" ng-click="submit(f)">Center</button>
+<button type="submit" class="btn btn-default" ng-click="showall()">Show All</button>
+
+    <leaflet lf-center="bangalore" markers="markers" geojson="geojson" defaults="defaults" height="600px" width="100%" ></leaflet>
+</div>
